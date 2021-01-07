@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv sh
+sleep 24h
+exec s6-setuidgid www-data /srv/update-rssextender.sh
+# This will automatically restart, wait 24h again and reupdate
