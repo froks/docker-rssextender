@@ -26,6 +26,6 @@ RUN curl -L -s https://github.com/just-containers/s6-overlay/releases/download/$
 EXPOSE 8080
 
 # Clean up.
-RUN set -xe && apk del --progress --purge && rm -rf /var/cache/apk/* && rm -rf /var/lib/apt/lists/*
+RUN set -xe && apk del --progress --purge && rm -rf /var/cache/apk/* && rm -rf /var/lib/apk/lists/*
 
 ENTRYPOINT ["/init"]
