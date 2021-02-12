@@ -1,6 +1,6 @@
-FROM alpine:3.12.3
+FROM alpine:3.13
 
-ENV S6_VERSION=v2.1.0.2
+ENV S6_VERSION=v2.2.0.1
 
 LABEL description="Self-hosted RSS-Extender environment." \
       maintainer="Florian Roks <flo.githubdocker@debugco.de>"
